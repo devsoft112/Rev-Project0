@@ -1,1 +1,4 @@
-angular.module('navbar', []);
+angular.module('navbar', [
+    'about',
+    'homepage'
+]);

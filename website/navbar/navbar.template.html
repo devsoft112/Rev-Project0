@@ -1,15 +1,25 @@
 <nav>
   <div class="logo">
-    <img src="../../public/Screenshot (73).png" alt="logo" id="logotipo"/>
-    <i><strong><span class="CompanyName">Elite Estates</span></strong></i>
+    <img src="../../public/Screenshot (73).png" alt="logo" id="logotipo" />
+    <i
+      ><strong><span class="CompanyName">Elite Estates</span></strong></i
+    >
   </div>
   <div class="content">
-    <a href="https://www.google.com.co/">Feed</a>
-    <a href="">About Us</a>
+    <a href="" ng-click="$ctrl.handleNav($event)">About Us</a>
+    <a href="" ng-click="$ctrl.handleNav($event)">Home Page</a>
     <div class="vertical-line"></div>
     <i class="fa-solid fa-globe"></i>
     <span>EN</span>
-    <button >Log In</button>
-    <button>Sign up</button>
+    <button class="login">Log In</button>
+    <button class="signup">Sign up</button>
   </div>
 </nav>
+
+<div ng-if="$ctrl.about">
+  <about></about>
+</div>
+
+<div ng-if="$ctrl.homepage">
+  <homepage></homepage>
+</div>

@@ -2,8 +2,14 @@
     margin: 0px;
 }
 
+button:hover {
+    cursor: pointer;
+    /* Changes to a pointing hand */
+}
+
 nav {
     display: flex;
+    justify-content: space-between;
     width: 100%;
     height: 5rem;
     background-color: white;
@@ -13,11 +19,30 @@ nav {
     width: 7rem;
     height: 4rem;
     padding-left: 1rem;
+    border-radius: 10px;
 }
 
 .content {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+}
+
+.signup {
+    width: 94.5px;
+    height: 46px;
+    margin-right: 1rem;
+    border-radius: 5px;
+    background-color: #343342;
+    color: white;
+}
+
+.login {
+    width: 94.5px;
+    height: 46px;
+    border-radius: 5px;
+    background-color: white;
 
 }
 
@@ -33,15 +58,113 @@ nav {
 }
 
 .vertical-line {
-    width: 1px; /* Adjust width as needed */
-    height: 15px; /* Adjust height as needed */
-    background-image: linear-gradient(to right, #2c2b2b 50%, #fff 50%);
-  }
+    width: 1px;
+    height: 30px;
+    background-image: linear-gradient(to right, #2c2b2b 50%, #2c2b2b 50%);
+}
 
-  .search{
+.horizontal-line {
+    margin-top: 2rem;
+    ;
+    width: 100%;
+    height: 1px;
+    background-color: #343342;
+    box-shadow: none;
+}
+
+.backgroundImage {
+    background-image: url('https://static.independent.co.uk/2023/03/20/16/iStock-590299316.jpg');
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100vh;
+    z-index: -1;
+    filter: brightness(0.8) contrast(0.7);
+    background-size: cover;
+}
+
+.search {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px;
-  }
+    justify-content: center;
+}
+
+.searchTitle {
+    color: white;
+    font-size: 3rem;
+}
+
+.searchDiv {
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.searchInput {
+    width: 400px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 5px;
+    border-color: white;
+    border-width: 0px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+.searchButton {
+    width: 5rem;
+    height: 45px;
+    border-radius: 5px;
+}
+
+
+
+.listings {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 80%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    max-width: 90rem;
+    height: auto;
+    width: auto;
+}
+
+.card {
+    background-color: aliceblue;
+    margin-left: 3rem;
+    width: 15rem;
+    height: 15rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    /* 5px rounded corners */
+}
+
+.imgCard {
+    width: 100%;
+    height: 10rem;
+}
+
+.about {
+    background-color:aliceblue;
+    width: 60rem;
+    height: auto;
+    margin: auto;
+
+}
+
+.aboutContent {
+    margin-top: 140px;
+    padding: 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.contactInfo {
+    margin: 2rem;
+    display: flex;
+    justify-content: space-between;
+}

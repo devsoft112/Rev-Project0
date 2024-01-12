@@ -1,1 +1,1 @@
-angular.module('homepage', []);
+angular.module('homepage', ['listings']);

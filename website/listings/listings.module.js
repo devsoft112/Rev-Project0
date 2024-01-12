@@ -1,1 +1,1 @@
-angular.module('website', []);
+angular.module('listings', []);
