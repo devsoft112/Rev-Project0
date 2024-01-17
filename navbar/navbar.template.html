@@ -1,13 +1,13 @@
 <nav>
   <div class="logo">
-    <img src="../../public/Screenshot (73).png" alt="logo" id="logotipo" />
+    <img src="/public/Screenshot (73).png" alt="logo" id="logotipo" />
     <i
       ><strong><span class="CompanyName">Elite Estates</span></strong></i
     >
   </div>
   <div class="content">
-    <a href="" ng-click="$ctrl.handleNav($event)">About Us</a>
-    <a href="" ng-click="$ctrl.handleNav($event)">Home Page</a>
+    <a href="#!/about">About Us</a>
+    <a href="#!/homepage">Home Page</a>
     <div class="vertical-line"></div>
     <i class="fa-solid fa-globe"></i>
     <span>EN</span>
@@ -15,11 +15,3 @@
     <button class="signup">Sign up</button>
   </div>
 </nav>
-
-<div ng-if="$ctrl.about">
-  <about></about>
-</div>
-
-<div ng-if="$ctrl.homepage">
-  <homepage></homepage>
-</div>

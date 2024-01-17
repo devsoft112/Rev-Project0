@@ -1,7 +1,7 @@
 angular
 .module('homepage')
 .component('homepage', {
-    templateUrl: 'website/homepage/homepage.template.html',
+    templateUrl: 'homepage/homepage.template.html',
     controller: ['$http',function myComponentController() {
 
         var self = this;

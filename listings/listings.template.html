@@ -1,0 +1,31 @@
+<div class="featuredListings">
+  <div class="featuredContent">
+    <div class="featuredHeader">
+      <h1>Entire Portfolio</h1>
+    </div>
+    <div class="filterListings">
+      <input
+        type="text"
+        ng-model="query"
+        class="searchInput"
+        placeholder="Filter our listings by City, Address or Value"
+      />
+    </div>
+    <div class="listingCardsContainer">
+      <div class="card2" ng-repeat="listing in $ctrl.listings | filter:query">
+        <img
+          src="https://cdn.repliers.io/{{listing.images[1]}}"
+          ;
+          alt="https://media.istockphoto.com/id/682432560/photo/stunning-luxury-home-exterior-at-sunset.jpg?s=612x612&w=0&k=20&c=NApF0vAI8wppLkNX73wWRxXUO2nyLHCB6peu38k2rtI="
+          class="imgCard"
+        />
+        <div class="container">
+          <h4><span>City:</span><b> {{ listing.address.city }}</b></h4>
+          <p><span>Type: </span>{{listing.class}}</p>
+          <br />
+          <p><span>Price: $</span>{{listing.listPrice | number:0}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

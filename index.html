@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html ng-app="app">
   <head>
-    <script src="https://kit.fontawesome.com/6e0d9f29ce.js" crossorigin="anonymous"></script>
-    <script
-      src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"
-      defer
-    ></script>
-    <script src="https://code.angularjs.org/1.8.2/angular-route.min.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.8.2/angular-route.min.js"></script>
+    <script src="https://kit.fontawesome.com/6e0d9f29ce.js" crossorigin="anonymous" defer></script>
     <script src="app.module.js" defer></script>
-    <script src="website/website.module.js" defer></script>
-    <script src="website/website.component.js" defer></script>
-    <script src="website/navbar/navbar.module.js" defer></script>
-    <script src="website/navbar/navbar.component.js" defer></script>
-    <script src="website/homepage/homepage.module.js" defer></script>
-    <script src="website/homepage/homepage.component.js" defer></script>
-    <script src="website/about/about.module.js" defer></script>
-    <script src="website/about/about.component.js" defer></script>
-    <script src="website/listings/listings.module.js" defer></script>
-    <script src="website/listings/listings.component.js" defer></script>
+    <script src="navbar/navbar.module.js" defer></script>
+    <script src="navbar/navbar.component.js" defer></script>
+    <script src="homepage/homepage.module.js" defer></script>
+    <script src="homepage/homepage.component.js" defer></script>
+    <script src="about/about.module.js" defer></script>
+    <script src="about/about.component.js" defer></script>
+    <script src="listings/listings.module.js" defer></script>
+    <script src="listings/listings.component.js" defer></script>
+    <script src="error/error.module.js" defer></script>
+    <script src="error/error.component.js" defer></script>
+    <script src="homepageview/homepageview.module.js" defer></script>
+    <script src="homepageview/homepageview.component.js" defer></script>
+    <script src="aboutview/aboutview.module.js" defer></script>
+    <script src="aboutview/aboutview.component.js" defer></script>
+    <script src="core/app.config.js" defer></script>
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-      <website></website>
+      <ng-view></ng-view>
   </body>
 </html>

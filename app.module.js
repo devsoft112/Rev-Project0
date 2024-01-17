@@ -1,3 +1,10 @@
 angular.module('app', [
-    'website'
+    'ngRoute',
+    'navbar',
+    'homepage',
+    'listings',
+    'about',
+    'error',
+    'homepageview',
+    'aboutview'
 ]);

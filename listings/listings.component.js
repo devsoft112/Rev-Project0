@@ -1,7 +1,7 @@
 angular
     .module('listings')
     .component('listings', {
-        templateUrl: 'website/listings/listings.template.html',
+        templateUrl: 'listings/listings.template.html',
         controller: ['$http', function propertiesController($http) {
 
             var self = this;
