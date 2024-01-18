@@ -2,7 +2,7 @@
     margin: 0px;
 }
 
-button:hover {
+button:hover, .listingCardsContainer:hover {
     cursor: pointer;
     /* Changes to a pointing hand */
 }
@@ -73,34 +73,42 @@ nav {
 
 .backgroundImage {
     background-image: url('https://static.independent.co.uk/2023/03/20/16/iStock-590299316.jpg');
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100vh;
-    z-index: -1;
-    filter: brightness(0.8) contrast(0.7);
     background-size: cover;
 }
 
-.search {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px;
-    justify-content: center;
-}
-
 .searchTitle {
-    color: white;
+    padding-top: 7rem;
+    color:#343342;
     font-size: 3rem;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+}
+.searchTitle2 {
+    padding-top: 2rem;
+    color:#343342;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
-.searchDiv {
-    margin-top: 30px;
-    justify-content: center;
+.listings {
+   display: flex;
+   padding-top: 4rem;
+}
+
+.card {
+    background-color: aliceblue;
+    margin: auto;
+    width: 16%;
+    height: 15rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    @media all and (max-width: 1024px) {
+        left: 33%;
+    }
 }
 
 .searchInput {
@@ -124,29 +132,9 @@ nav {
 
 
 
-.listings {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    top: 80%;
-    left: 48%;
-    transform: translate(-50%, -50%);
-    max-width: 90rem;
-    height: auto;
-    width: auto;
-}
 
-.card {
-    background-color: aliceblue;
-    margin-left: 3rem;
-    width: 15rem;
-    height: 15rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    border-radius: 5px;
-}
 
-.card2{
+.card2 {
     background-color: aliceblue;
     margin-left: 3rem;
     margin-bottom: 3rem;
@@ -160,6 +148,7 @@ nav {
 .imgCard {
     width: 100%;
     height: 10rem;
+    background-size: cover;
 }
 
 .about {
@@ -182,7 +171,7 @@ nav {
     justify-content: space-between;
 }
 
-.listingCardsContainer{
+.listingCardsContainer {
     display: flex;
     flex-wrap: wrap;
 }
@@ -193,12 +182,50 @@ nav {
     justify-content: center;
     margin-bottom: 4rem;
 }
-.container{
+
+.container {
     padding-left: 10px;
     padding-bottom: 10px;
 }
 
-.filterListings{
+.filterListings {
+    display: flex;
+    justify-content: center;
+}
+
+.cardDetails {
+    background-color: aliceblue;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+    width: 70%;
+    height: 55rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.containerDetails{
+    margin-left: 3rem;
+    margin-right: 3rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.h2Details{
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.imgCardDetails{
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+}
+
+.cardDetailsContainer {
+    margin-top: 8rem;
     display: flex;
     justify-content: center;
 }

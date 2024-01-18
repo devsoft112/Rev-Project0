@@ -1,22 +1,19 @@
 <div class="homepage">
-  <div class="backgroundImage"></div>
-  <div class="search">
-    <h1 class="searchTitle">Find Your Dream Home</h1>
-    <div class="searchDiv">
-      <h2 class="searchTitle">Featured Listings</h2>
-    </div>
-  </div>
-  <div class="listings">
-    <div class="card" ng-repeat="listing in $ctrl.listings | filter:query">
-      <img
-        src="https://media.istockphoto.com/id/682432560/photo/stunning-luxury-home-exterior-at-sunset.jpg?s=612x612&w=0&k=20&c=NApF0vAI8wppLkNX73wWRxXUO2nyLHCB6peu38k2rtI="
-        alt="Avatar"
-        class="imgCard"
-      />
-      <div class="container">
-        <h4><b> {{ listing.name }} </b></h4>
-        <br />
-        <p>{{listing.value}}</p>
+  <div class="backgroundImage">
+      <h1 class="searchTitle">Find Your Dream Home</h1>
+      <h2 class="searchTitle2">Featured Listings</h2>
+    <div class="listings">
+      <div class="card" ng-repeat="listing in $ctrl.listings | filter:query">
+        <img
+          src="https://media.istockphoto.com/id/682432560/photo/stunning-luxury-home-exterior-at-sunset.jpg?s=612x612&w=0&k=20&c=NApF0vAI8wppLkNX73wWRxXUO2nyLHCB6peu38k2rtI="
+          alt="Avatar"
+          class="imgCard"
+        />
+        <div class="container">
+          <h4><b> {{ listing.name }} </b></h4>
+          <br />
+          <p>{{listing.value}}</p>
+        </div>
       </div>
     </div>
   </div>

@@ -1,7 +1,50 @@
-<div>
-    <navbar></navbar>
-    <div>
-        <p>{{ $ctrl.listing.class }}</p>
-
+<div class="listingDetailsContainer">
+  <navbar></navbar>
+  <div class="cardDetailsContainer">
+    <div class="cardDetails">
+      <img
+        src="https://cdn.repliers.io/{{$ctrl.listing.images[1]}}"
+        ;
+        alt=""
+        class="imgCardDetails"
+      />
+      <h2 class="h2Details">Details</h2>
+      <div class="containerDetails">
+        <div>
+          <h4 class="h2Details">Address</h4>
+          <p>
+            {{ $ctrl.listing.address.streetNumber }}
+            {{$ctrl.listing.address.streetName}}
+            {{$ctrl.listing.address.streetSuffix}},
+            {{$ctrl.listing.address.city}}
+          </p>
+          <p>{{$ctrl.listing.address.state}}, USA</p>
+          <h4 class="h2Details">Type of listing</h4>
+          <p>{{$ctrl.listing.type}}</p>
+          <h4 class="h2Details">Type of residency</h4>
+          <p>{{$ctrl.listing.class}}</p>
+          <h4 class="h2Details">Price</h4>
+          <p>${{$ctrl.listing.listPrice | number:0}}</p>
+        </div>
+        <div>
+          <h4 class="h2Details">Fees</h4>
+          <p>Annual taxes: ${{$ctrl.listing.taxes.annualAmount | number:0}}</p>
+          <h4 class="h2Details">Days on Market</h4>
+          <p>{{$ctrl.listing.daysOnMarket}}</p>
+          <h4 class="h2Details">Occupancy</h4>
+          <p>{{$ctrl.listing.occupancy}}</p>
+        </div>
+        <div>
+          <h4 class="h2Details">Bathrooms</h4>
+          <p>{{$ctrl.listing.details.numBathrooms}}</p>
+          <h4 class="h2Details">Bedrooms</h4>
+          <p>{{$ctrl.listing.details.numBedrooms}}</p>
+          <h4 class="h2Details">Kitchens</h4>
+          <p>{{$ctrl.listing.details.numKitchens}}</p>
+          <h4 class="h2Details">Garage spaces</h4>
+          <p>{{$ctrl.listing.details.numGarageSpaces}}</p>
+        </div>
+      </div>
     </div>
-</div>  
+  </div>
+</div>
