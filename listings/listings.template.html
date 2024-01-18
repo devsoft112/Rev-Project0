@@ -12,7 +12,7 @@
       />
     </div>
     <div class="listingCardsContainer">
-      <div class="card2" ng-repeat="listing in $ctrl.listings | filter:query">
+      <div class="card2" ng-repeat="listing in $ctrl.listings | filter:query" ng-click="$ctrl.showDetails(listing.mlsNumber)">
         <img
           src="https://cdn.repliers.io/{{listing.images[1]}}"
           ;
