@@ -9,7 +9,7 @@ angular.module("app").config([
         template: "<homepageview></homepageView>",
       })
       .when("/about", {
-        template: "<aboutview></aboutView>",
+        template: "<about></about>",
       })
       .when("/listing/:index", {
         template: "<listingdetails></listingdetails>",

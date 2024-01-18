@@ -6,6 +6,6 @@ angular.module('app', [
     'about',
     'error',
     'homepageview',
-    'aboutview',
-    'listingdetails'
+    'listingdetails',
+    'footer'
 ]);

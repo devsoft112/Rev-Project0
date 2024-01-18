@@ -1,1 +1,6 @@
-angular.module('homepageview', ['navbar', 'homepage', 'listings']);
+angular.module('homepageview', [
+    'navbar',
+    'homepage', 
+    'listings', 
+    'footer'
+]);
