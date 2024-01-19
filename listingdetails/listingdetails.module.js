@@ -1,1 +1,1 @@
-angular.module('listingdetails', ['navbar']);
+angular.module('listingdetails', ['navbar', 'footer']);
